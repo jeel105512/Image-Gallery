@@ -1,0 +1,150 @@
+<!-- Below, please list all group members' full names and student IDs. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Image Gallery | COMP1073 Client-Side JavaScript</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/gallery.css" />
+</head>
+
+<body>
+	<header class="heading">
+		<h1>Image Gallery</h1>
+	</header>
+	<section id="gallery">
+		<figure class="figure" data-index="0" data-status="active">
+			<div class="image">
+				<img src="images/flowers-pink-large.jpg" alt="" width="1200" height="800" class="mainImage" />
+			</div>
+			<div class="description">
+				<p>
+					Market in Münster, North Rhine-Westphalia, Germany
+					By Dietmar Rabich - Own work, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=62071586" target="_blank">photo link</a>
+				</p>
+			</div>
+			<div class="title">
+				<figcaption class="title">Market in Münster</figcaption>
+			</div>
+			<div class="buttons">
+				<i class="fa-solid fa-arrow-left left-button" type="button"></i>
+				<i class="fa-solid fa-arrow-right right-button" type="button"></i>
+			</div>
+		</figure>
+		<figure class="figure" data-index="1" data-status="unknown">
+			<div class="image">
+				<img src="images/flowers-purple-large.jpg" alt="" width="1200" height="800" class="mainImage" />
+			</div>
+			<div class="description">
+				<p>
+					Sentmaring Park, Münster, North Rhine-Westphalia, Germany
+					By Dietmar Rabich - Own work, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=48576226" target="_blank">photo link</a>				
+				</p>
+			</div>
+			<div class="title">
+				<figcaption class="title">Sentmaring Park</figcaption>
+			</div>
+			<div class="buttons">
+				<i class="fa-solid fa-arrow-left left-button" type="button"></i>
+				<i class="fa-solid fa-arrow-right right-button" type="button"></i>
+			</div>
+		</figure>
+		<figure class="figure" data-index="2" data-status="unknown">
+			<div class="image">
+				<img src="images/flowers-red-large.jpg" alt="" width="1200" height="800" class="mainImage" />
+			</div>
+			<div class="description">
+				<p>
+					Poppies in cornfield, Dülmen, North Rhine-Westphalia, Germany
+			 		By Dietmar Rabich - Own work, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=40957238" target="_blank">photo link</a>
+				</p>
+			</div>
+			<div class="title">
+				<figcaption class="title">Poppies in cornfield</figcaption>
+			</div>
+			<div class="buttons">
+				<i class="fa-solid fa-arrow-left left-button" type="button"></i>
+				<i class="fa-solid fa-arrow-right right-button" type="button"></i>
+			</div>
+		</figure>
+		<figure class="figure" data-index="3" data-status="unknown">
+			<div class="image">
+				<img src="images/flowers-white-large.jpg" alt="" width="1200" height="800" class="mainImage" />
+			</div>
+			<div class="description">
+				<p>
+					Daffodils in Sentmaring park, Münster, North Rhine-Westfalia, Germany
+					By Dietmar Rabich - Own work, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=48211466" target="_blank">photo link</a>
+				</p>
+			</div>
+			<div class="title">
+				<figcaption class="title">Daffodils in Sentmaring park</figcaption>
+			</div>
+			<div class="buttons">
+				<i class="fa-solid fa-arrow-left left-button" type="button"></i>
+				<i class="fa-solid fa-arrow-right right-button" type="button"></i>
+			</div>
+		</figure>
+		<figure class="figure" data-index="4" data-status="unknown">
+			<div class="image">
+				<img src="images/flowers-yellow-large.jpg" alt="" width="1200" height="800" class="mainImage" />
+			</div>
+			<div class="description">
+				<p>
+					Sunflowers in the hamlet Dernekamp, Kirchspiel, Dülmen, North Rhine-Westphalia, Germany
+					By Dietmar Rabich - Own work, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=61514522" target="_blank">photo link</a>
+				</p>
+			</div>
+			<div class="title">
+				<figcaption class="title">Sunflowers in the hamlet Dernekamp</figcaption>
+			</div>
+			<div class="buttons">
+				<i class="fa-solid fa-arrow-left left-button" type="button"></i>
+				<i class="fa-solid fa-arrow-right right-button" type="button"></i>
+			</div>
+		</figure>
+	</section>
+	<section class="allImages">
+		<!-- adding this ul li through js -->
+		<!-- <ul>
+			<li>
+				<img src="images/flowers-pink-small.jpg" alt=""/>
+			</li>
+			<li>
+				<img src="images/flowers-purple-small.jpg" alt="" />
+			</li>
+			<li>
+				<img src="images/flowers-red-small.jpg" alt="" />
+			</li>
+			<li>
+				<img src="images/flowers-white-small.jpg" alt="" />
+			</li>
+			<li>
+				<img src="images/flowers-yellow-small.jpg" alt="" />
+			</li>
+		</ul> -->
+	</section>
+	<script src="js/gallery.js"></script>
+	<!-- PHOTO CREDITS
+	Sunflowers in the hamlet Dernekamp, Kirchspiel, Dülmen, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61514522
+
+	Poppies in cornfield, Dülmen, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=40957238
+
+	Daffodils in Sentmaring park, Münster, North Rhine-Westfalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48211466
+
+	Sentmaring Park, Münster, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48576226
+
+	Market in Münster, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=62071586
+	-->
+</body>
+
+</html>
