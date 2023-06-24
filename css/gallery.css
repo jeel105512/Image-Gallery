@@ -46,6 +46,7 @@ header{
     transition: all 0.4s ease;
 }
 
+/* ------------------------------------------------------------------------------------- */
 .figure[data-status="unknown"]{
     transform: scale(0);
     transition: none;
@@ -72,6 +73,7 @@ header{
     transform: translateX(-50%) scale(0);
     transition: none;
 }
+/* ------------------------------------------------------------------------------------- */
 
 .image{
     width: 100%;
